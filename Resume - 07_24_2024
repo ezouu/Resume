@@ -1,0 +1,209 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Edward Q. Zou} \\ \vspace{1pt}
+    \small \href{mailto:eddiezou7374@gmail.com}{\underline{eddiezou7374@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/edward-zou-13bb77182}{\underline{LinkedIn}} $|$
+    \href{https://github.com/ezouu}{\underline{GitHub}} $|$
+    \href{https://edwardportfolio-lyart.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California Santa Cruz}{Santa Cruz, CA}
+      {Bachelor of Science in Computer Science; GPA: 3.86 (Dean’s Honors List)}{Aug. 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Relevant Courses: Data Structures and Algorithms, Appl Discrete Math, Comp Sys and C Prog, Com Sys/Assmbly Lan, Vector Calculus, Linear Algebra}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/ezouu/cfe}{\underline{\textbf{CFE Environment}}}}{2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developed CPU initialization and bootstrap code for use on processors like the STM32 and its derivatives.}
+        \resumeItem{Implemented functions to initialize CPUs, caches, memory controllers, and peripherals.}
+        \resumeItem{Developed and optimized ARM assembly code for the STM32, integrating into hardware peripherals.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/ezouu/ezouu.github.io}{\underline{\textbf{My Portfolio Website}}}}{2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developed a personal portfolio to showcase projects and professional experiences.}
+        \resumeItem{Implemented responsive design and interactive elements using HTML, CSS, and JavaScript.}
+        \resumeItem{Deployed website and built email queries through the UI directly}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/ezouu/stock-market-game}{\underline{\textbf{Stock Market Game}}}}{2022 -- 2023}
+      \resumeItemListStart
+        \resumeItem{Developed Stock Market Game that allows user to login and perform trades using artificial currency.}
+        \resumeItem{Makes use of data from Yahoo Finance to pull live data to simulate the actual stock market.}
+        \resumeItem{Used React and Highcharts to represent data pulled, coded website in JS and HTML.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/ezouu/genshincalculator}{\underline{\textbf{HoyoVerse Simulation Tool}}}}{2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{GenshinCalculator is a simulation tool designed for users to optimize their characters. The tool uses intricate simulation logic and statistical calculations to accurately model and optimize in-game gear and weaponry.}
+        \resumeItem{Pulled in-game data to perform analysis on the the time frame of reaching the highest achievements in the game by using complex algorithms to simulate randomized gear drops.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Teacher/Tutor}{June 2018 -- Present}
+      {All Star Institute}{Fremont, CA}
+      \resumeItemListStart
+        \resumeItem{Taught 100+ students through private and group tutoring in all areas of the sciences.}
+        \resumeItem{Taught classes on Java, Python, as well as Geometry/Algebra 2 to competitive mathematics (AMC 8, 10, 12).}
+        \resumeItem{Currently teaching math olympiad and python in person.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teacher's Assistant}{Aug. 2021 -- Jun. 2022}
+      {University of California Santa Cruz}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Assisted preparing Labs, Exams, homework, study material, and grading assignments for 153 students.}
+        \resumeItem{Helped specific students with learning issues to understand concepts and improve their grades.}
+        \resumeItem{Hosted office hours and private tutoring sessions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dining Hall Worker}{June 2023 -- Present}
+      {UCSC Cowell/Stevenson Dining Hall}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Performed a variety of semi-skilled and skilled food preparations, serving, maintenance, and safety and sanitation functions.}
+        \resumeItem{Maintained a smooth and efficient workflow while working in a team environment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {President/Founder}{August 2023 -- Present}
+      {UCSC Poker Club}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Founded UCSC poker, organized tournaments and educational sessions with professional player mentors.}
+        \resumeItem{Grew the club to 200+ members, both students and locals.}
+        \resumeItem{Held weekly meetings dedicated to studying probability and practicing games/tournaments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, HTML/CSS/JS/React, Linux, Assembly, C, C++} \\
+     \textbf{Tools}{: Oscilloscope, Solidworks, Fusion360, Photoshop, Lightroom, Final Cut, Adobe Premiere Pro} \\
+     \textbf{Other}{: Digital and Film (35mm) Photography}
+    }}
+ \end{itemize}
+
+\end{document}
